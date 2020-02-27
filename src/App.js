@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
+import Sidebar from './Component/Sidebar';
+import Content from './Component/Content';
+import Footer from './Component/Footer';
+
 import './App.css';
 
 import Subheader from './Subheader';
@@ -15,6 +19,15 @@ class Header extends Component{
 function App() {
   return (
     <div className="App">
+      <div>
+        <div class="w3-content w3-margin-top" style={{maxWidth:1400}}>
+            <div class="w3-row-padding">
+              <Sidebar/>
+              <Content/>
+            </div>
+        </div>
+      </div>
+      <Footer/>
       {/* <form class="p-3 raleway">
         <div class="text-center">
           <img align="middle" class="mt-5 foto-bio" src="gagal-v1.jpg" alt=""></img>
